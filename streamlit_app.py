@@ -1,5 +1,11 @@
+# ---- Minimal, known-good Streamlit app (copy & paste to replace your file) ----
 import streamlit as st
+import random, math, colorsys, io
+import numpy as np
+import matplotlib.pyplot as plt
 
+
+st.set_page_config(page_title="Generative Poster", layout="centered")
 
 def generate_poster(style="Vivid", seed=None, add_title=True):
     if seed is not None:
